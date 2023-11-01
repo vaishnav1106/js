@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+    <script src="script.js"></script>
+    <script>
+
+        function hello(){
+            document.getElementById('p1').style.display='none'
+        }
+    </script>   
+</head>
+<body>
+    <button onclick="document.getElementById('p1').innerHTML=Date()">
+        Click me!
+    </button>
+    <p id="p1">Welcome back</p>
+    <hr>
+
+    <button onclick="document.getElementById('p2').innerHTML='hello'">Welcome</button>
+    <p id="p2">Welcome back</p>
+    <hr>
+
+    <!-- <img src="avengers.jpg" alt="" id="img">
+    <button onclick="document.getElementById('img').src='team7.jpeg'">hi</button>
+     -->
+     <img src="avengers.jpg" width="300px" id="img">
+     <button onclick="document.getElementById('img').src='team7.jpeg'">hi</button>
+     
+          
+     <button onclick="hello()">button1</button>
+     <button onclick="document.getElementById('p1').style.display='block'">button2</button><hr>
+     <button onclick="document.getElementById('p1').style.fontSize='100px'">button3</button><hr>
+     <button onclick="sample()">button4</button>
+
+   <hr>
+
+     <input type="text" id="txtname"/>
+     <button id="btn" onclick="btntext()">button5</button>
+
+     <hr>
+     <input type="text" id="txt2"/>
+     <input type="text" id="txt3"/>
+     <p id="p3">addition.</p>
+     <button id="btn" onclick="text2()">button6</button>
+
+     <hr>
+     <input type="text" id="txt4"/>
+     <input type="text" id="txt5"/>
+     <p id="p4">dived.</p>
+     <button id="btn" onclick="text3()">button7</button>
+
+
+     <hr>
+     <input type="text" id="txt6"/>
+     <input type="text" id="txt7"/>
+     <p id="p5">sub.</p>
+     <button id="btn" onclick="text4()">button8</button>
+
+
+     <hr>
+     <input type="text" id="txt8"/>
+     <button onclick="sqr()">Square</button>
+     <p id="p6"><u> </u></p>
+    
+</body>
+</html>

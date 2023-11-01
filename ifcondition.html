@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>if condition</title>
+        <script>
+           // function math()
+            //{    function for greater or less then number
+                // var num1=parseInt(document.getElementById('txt1').value);
+                // var num2=parseInt(document.getElementById('txt2').value);
+                // if(num1>num2)
+                // {
+                //     document.write(num1+"is greater")
+                // }
+                // else{
+                //     document.write(num2+"is greater")
+                // }
+
+
+                //function for odd or even
+
+                // var num1=parseInt(document.getElementById('txt1').value);
+             
+                // if(num1%2==0)
+                // {
+                //     document.write(num1 + " is even")
+                // }
+                // else
+                // {
+                //     document.write(num1 +" is odd")
+                // }
+               
+
+                //function for greater of 3 numbers using else if
+
+                // var num1=parseInt(document.getElementById('txt1').value);
+                // var num2=parseInt(document.getElementById('txt2').value);
+                // var num3=parseInt(document.getElementById('txt3').value);
+                // if(num1 >= num2 && num1 >= num3) {
+                //     document.write(num1 + " is greater")
+                //  }
+                //  else if (num2 >= num1 && num2 >= num3) {
+                //     document.write(num2 + " is greater")
+                //      }
+                //     else {
+                //         document.write(num3 + " is greater")
+                //     }
+
+              
+             //  }
+
+
+             //function to check whether the input matches the stored text
+             function string()
+             {
+                var name=document.getElementById('txt1');
+                var pass=document.getElementById('pass');
+                if(name.value=="admin" && pass.value=="password")
+                {
+                    document.write("Login Successfully")
+                }
+                else
+                {
+                    document.write("invalid input")
+                }
+                
+             }
+
+             
+        </script>
+    </head>
+    <body>
+         <input type="text" id="txt1">
+         <input type="text" id="pass">
+         
+        <button id="btn" onclick="string()">click</button>
+         <p id="p1"></p>
+    </body>
+</html>    

@@ -1,0 +1,19 @@
+h1{
+    background-color:aliceblue;
+    color:brown;
+    text-align: center;
+}
+/* using class */
+.p1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: brown;
+    text-align: center;
+}
+
+/* using id */
+
+#p2{
+    font-size: 60px;
+    color:white;
+    text-align: right;
+}
