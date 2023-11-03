@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function find(){
+        var  hey=["welcome","hello","world"]
+        var num=document.getElementById('i').value;
+        var a=0;
+         for(const x of hey)
+         {
+            if(num==x)
+
+            {
+                a=1;
+                document.write(" exited");
+            }
+          }
+         if(f==0)
+         {
+            document.write("not exited");
+            a=1;
+         }
+       
+    }
+
+    // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    function sample(){
+        const hi=[3,4,5,6,8,9];
+        for(const x of hi)
+        {
+            // if(x%2==0)
+            // {
+            //      document.write(x+"<br>");
+            // }
+            
+           
+        }
+
+    }
+
+    // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    function sample1() 
+    {
+        // Define an array 'input' containing some integers.
+        const input = [13, 4, 5, 6, 8, 9];
+        
+        // Initialize the 'greatest' variable with the first element of the 'input' array.
+        let greatest = input[0];
+
+        // Iterate through the 'input' array starting from the second element (index 1).
+        for (let i = 1; i < input.length; i++) {
+            // Check if the current element (input[i]) is greater than the 'greatest' value.
+            if (input[i] > greatest) {
+                // If it is greater, update the 'greatest' variable with the new value.
+                greatest = input[i];
+            }
+        }
+
+        // Display the greatest integer on the web page using the 'document.write' method.
+        document.write(greatest);
+    }
+
+    // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    function ace() {
+    // Define an array 'input' containing some integers.
+    const input = [13, 4, 15, 6, 18, 9];
+    
+    // Sort the 'input' array in ascending order.
+    input.sort(function(a, b) {
+        return a - b;
+    });
+
+    // Display the sorted array on the web page using the 'document.write' method.
+    document.write('Ascending order: ' + input.join(', '));
+}
+
+// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function desc() {
+    // Define an array 'input' containing some integers.
+    const input = [13, 4, 15, 6, 18, 9];
+    
+    // Sort the 'input' array in descending  order.
+    input.sort(function(a, b) {
+        return b - a;
+    });
+
+    // Display the sorted array on the web page using the 'document.write' method.
+    document.write('descending order: ' + input.join(', '));
+}
+
+// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function ace1() {
+    // Define an array 'input' containing some integers.
+    const input = [13, 4, 5, 6, 8, 9];
+    
+    // Implement a simple ascending sort using a for loop.
+    for (let i = 0; i < input.length - 1; i++) {
+        for (let j = 0; j < input.length - 1 - i; j++) {
+            if (input[j] > input[j + 1]) {
+                // Swap the elements if they are out of order.
+                const temp = input[j];
+                input[j] = input[j + 1];
+                input[j + 1] = temp;
+            }
+        }
+    }
+
+    // Display the sorted array on the web page using the 'document.write' method.
+    document.write('Ascending order: ' + input.join(', '));
+}
+// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function ave() {
+    // Define an array 'input' containing some integers.
+    const input = [13, 4, 5, 6, 8, 9];
+    
+    // Initialize variables for sum and average.
+    let sum = 0;
+
+    // Iterate through the 'input' array to calculate the sum of elements.
+    for (let i = 0; i < input.length; i++) {
+        sum += input[i];
+    }
+
+    // Calculate the average by dividing the sum by the number of elements.
+    const average = sum / input.length;
+
+
+    // Display the average on the web page using the 'document.write' method.
+    document.write('Average: ' + average);
+}
+
+// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function img(){
+    document.getElementById('img').style.visibility="hidden";
+}
+
+// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function img1(){
+    document.getElementById('img').style.visibility="visible";
+}
+
+// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // const imageSources = ["avengers.jpg", "team7.jpeg", "one-piece.jpg"];
+        // let currentImageIndex = 0;
+        // const imgElement = document.getElementById("img");
+
+        function changeImage(direction) {
+
+            const imageSources = ["avengers.jpg", "team7.jpeg", "one-piece.jpg"];
+                let currentImageIndex = 0;
+                const imgElement = document.getElementById("img");
+
+            // Update the current image index based on the direction (1 for Next, -1 for Previous).
+            currentImageIndex += direction;
+
+            // Check for valid index range.
+            if (currentImageIndex < 0) {
+                currentImageIndex = imageSources.length - 1;
+            } else if (currentImageIndex >= imageSources.length) {
+                currentImageIndex = 0;
+            }
+
+
+            // Set the source of the image element to the new image.
+            imgElement.src = imageSources[currentImageIndex];
+        }
+    
+</script>
+<body>
+    <!-- <input type="text" id="in"> -->
+    
+    <img src="avengers.jpg" alt="" width="300px" height="300px" id="img">
+    <button id="prevBtn" onclick="changeImage(-1)">Previous</button>
+    <button id="nextBtn" onclick="changeImage(1)">Next</button>
+</body>
+</html>
